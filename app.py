@@ -38,7 +38,6 @@ df.to_excel("pragyan_faq_prices.xlsx", index=False)
 print("✅ Created 'pragyan_faq_prices.xlsx' with PragyanAI presentation data!")
 import os
 import pandas as pd
-import gradio as gr
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
