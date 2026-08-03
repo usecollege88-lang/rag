@@ -1,4 +1,5 @@
 import pandas as pd
+import streamlit as st
 
 faq_data = {
     "Category": [
@@ -129,9 +130,11 @@ def load_documents_into_vectorstore(file_paths=None):
 
 # Build initial index
 load_documents_into_vectorstore()
-from google.colab import userdata
-# Retrieve your key
-groq_api_key = userdata.get('GROQ_API_KEY')
+# from google.colab import userdata
+# # Retrieve your key
+# groq_api_key = userdata.get('GROQ_API_KEY')
+
+api_key = st.secrets["GROQ_API_KEY"]
 # ---------------------------------------------------------------------------
 # 3. Groq LLM & LCEL RAG Pipeline
 # ---------------------------------------------------------------------------
