@@ -134,7 +134,7 @@ load_documents_into_vectorstore()
 # # Retrieve your key
 # groq_api_key = userdata.get('GROQ_API_KEY')
 
-api_key = st.secrets["GROQ_API_KEY"]
+groq_api_key = st.secrets["GROQ_API_KEY"]
 # ---------------------------------------------------------------------------
 # 3. Groq LLM & LCEL RAG Pipeline
 # ---------------------------------------------------------------------------
