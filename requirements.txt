@@ -8,3 +8,5 @@ faiss-cpu
 pypdf 
 sentence-transformers
 openpyxl
+torchvision
+
