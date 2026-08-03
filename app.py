@@ -207,7 +207,7 @@ st.set_page_config(page_title="PragyanAI Intelligent Assistant", layout="wide")
 # 1. State Initialization
 # ---------------------------------------------------------------------------
 # Initialize chat history for personas in session state
-if "chat_histories" not in st_session_state:
+if "chat_histories" not in st.session_state:
     st.session_state["chat_histories"] = {}
 
 if "kb_status" not in st.session_state:
